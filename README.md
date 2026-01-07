@@ -8,7 +8,7 @@ The pipeline is written in PySpark and follows a simple flow: I load and clean t
 
 The code is organised into small modules that are designed to be run sequentially within a Spark session, rather than as a single monolithic script.
 
-## Example Results
+### Example Results
 
 One of the clearest patterns I found was how efficiency changes across the day. Certain hours consistently produce higher median earnings per minute, while others drop off sharply, reflecting differences in demand, congestion, and trip structure.
 
