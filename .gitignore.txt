@@ -1,0 +1,15 @@
+# data files
+data/
+*.csv
+*.parquet
+
+# python
+__pycache__/
+*.pyc
+.env
+
+# notebooks
+.ipynb_checkpoints/
+
+# system
+.DS_Store
