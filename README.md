@@ -4,8 +4,6 @@ Large-scale analysis of NYC Yellow Taxi trips using PySpark, focused on
 trip efficiency, temporal patterns, pickup locations, weather effects,
 and basic predictive modelling.
 
----
-
 ## Overview
 
 This project explores what drives **taxi trip efficiency** in New York City,
@@ -17,8 +15,6 @@ Key areas:
 - impact of weather (rain, temperature)
 - baseline prediction of trip efficiency
 
----
-
 ## Example Results
 
 **Median earnings per minute by hour of day**
@@ -29,21 +25,15 @@ Key areas:
 
 ![Rain vs dry median $/min](assets/plots/rain_vs_dry_median_epm.png)
 
----
-
 ## Stack
 
 PySpark, Python, Spark MLlib, Pandas, Matplotlib
-
----
 
 ## Data
 
 NYC TLC Yellow Taxi trips (2019) and NOAA weather data.  
 Raw datasets are excluded due to size and licensing.  
 This repo reconstructs a university assignment after submission.
-
----
 
 ## Structure
 src/
@@ -53,18 +43,12 @@ src/
 04_analysis.py
 05_models.py
 
----
-
 ## Modelling
 
 - Linear regression to predict earnings per minute
 - Logistic regression to classify high-efficiency trips
 
----
-
 ## Note: Modules are designed to be composed in sequence within a Spark session.
-
----
 
 ## Author
 
