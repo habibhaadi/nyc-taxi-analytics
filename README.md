@@ -19,6 +19,18 @@ Key areas:
 
 ---
 
+## Example Results
+
+**Median earnings per minute by hour of day**
+
+![Median $/min by hour](assets/plots/median_epm_by_hour.png)
+
+**Median earnings per minute on rainy vs dry days**
+
+![Rain vs dry median $/min](assets/plots/rain_vs_dry_median_epm.png)
+
+---
+
 ## Stack
 
 PySpark, Python, Spark MLlib, Pandas, Matplotlib

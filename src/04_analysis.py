@@ -133,12 +133,27 @@ def plot_time_summaries(by_hour: DataFrame, by_dow: DataFrame) -> None:
     bd = by_dow.toPandas()
 
     import matplotlib.pyplot as plt
+    import os
 
+    os.makedirs("assets/plots", exist_ok=True)
+
+    # median $/min by hour
     bh.plot(x="pickup_hour", y="p50_$per_min", kind="line", marker="o")
-    plt.title("Median $/min by Hour"); plt.ylabel("$ per minute"); plt.xlabel("Hour of day (0–23)"); plt.show()
+    plt.title("Median $/min by Hour")
+    plt.ylabel("$ per minute")
+    plt.xlabel("Hour of day (0–23)")
+    plt.tight_layout()
+    plt.savefig("assets/plots/median_epm_by_hour.png", dpi=150)
+    plt.show()
 
+    # median $/min by day of week
     bd.plot(x="pickup_dow", y="p50_$per_min", kind="bar")
-    plt.title("Median $/min by Day"); plt.ylabel("$ per minute"); plt.xlabel("Day of week"); plt.show()
+    plt.title("Median $/min by Day of Week")
+    plt.ylabel("$ per minute")
+    plt.xlabel("Day of week")
+    plt.tight_layout()
+    plt.savefig("assets/plots/median_epm_by_dow.png", dpi=150)
+    plt.show()
 
 
 ## hour x borough heatmap
