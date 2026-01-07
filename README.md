@@ -50,6 +50,10 @@ src/
 
 ---
 
+## Note: Modules are designed to be composed in sequence within a Spark session.
+
+---
+
 ## Author
 
 Habib Haadi  
